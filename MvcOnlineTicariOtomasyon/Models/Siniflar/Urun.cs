@@ -17,7 +17,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
         public string Marka { get; set; }
-        public short Stok { get; set; }
+        public short Stok { get; set; } //değerleri düşük olacaksa bellek kullanımını sınırlamak için short kullanılabilir.
         public decimal AlisFiyat { get; set; }
         public decimal SatisFiyat { get; set; }
         public bool Durum { get; set; }  //ürünler için kritik stok seviyesi belirleneceği için bool ile tanımlandı

@@ -25,6 +25,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         [HttpPost]
         public ActionResult DepartmanEkle(Departman d) //Departman sınıfından d türetildi.
         {
+            d.Durum = true;
             c.Departmans.Add(d);
             c.SaveChanges();
             return RedirectToAction("Index");   //departman eklendi. kaydedildi. sonrasında beni bir aksiyona yönlendir dedik.
